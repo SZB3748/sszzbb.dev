@@ -1,0 +1,33 @@
+
+:root, body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    overflow-x: hidden;
+
+    background-color: #000;
+}
+
+body, button {
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img.icon.next {
+    content: url(/static/img/next.svg);
+}
+
+img.icon.prev {
+    content: url(/static/img/next.svg);
+    transform: scaleX(-1);
+}
+
+img.icon.twitch {
+    content: url(/static/img/twitch.svg)
+}
+
+img.icon.github {
+    content: url(/static/img/github.svg);
+}

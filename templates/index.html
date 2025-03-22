@@ -1,7 +1,64 @@
 {% extends "base.html" %}
-{% block title %}WIP | Come back later :){% endblock %}
+{% block title %}SZB{% endblock %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/static/css/emotes.css">
+<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+{% endblock %}
+{% block scripts %}
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script src="/static/js/index.js"></script>
+{% endblock %}
 {% block bodycontent %}
 <main>
-    Under construction 👷‍♂️
+    <div id="foreground-container" style="opacity: 0;">
+        <div id="card-1" class="card focus">
+            <div id="profile-image">
+                <img alt="me" title="Literally me">
+            </div>
+            <div class="vl"></div>
+            <div id="card-1-content">
+                <h1>Hi <img class="emote hi"></h1>
+                <span>I'm SZB</span>
+                <ul class="links">
+                    Check out my stuff:
+                    <li><a href="https://github.com/SZB3748"><img class="icon github" aria-label="github icon"><span>Github</span></a></li>
+                    <li><a href="https://twitch.tv/s_z_b_"><img class="icon twitch" aria-label="twitch icon"><span>Twitch</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="card-2" class="card">
+            <h1>Github</h1>
+            <p>I write a lot of code.</p>
+            <span>Some things I've done:</span>
+            <div class="groups">
+                <div class="group">
+                    <h3><a href="https://github.com/SZB3748/SZBot">SZBot</a></h3>
+                    <p>A twitch bot I'm working on. Right now it only queues music.</p>
+                </div>
+                <div class="group">
+                    <h3><a href="https://github.com/SZB3748/Circles">Circles</a></h3>
+                    <p>SNS constructed by users out of "Circles". You can think of it like a Euler Diagram where users can create subcircles and post inside of them.</p>
+                </div>
+            </div>
+            <b>My Contributions</b>
+            <a href="https://github.com/SZB3748"><img src="https://ghchart.rshah.org/SZB3748" alt="My contribution graph" title="Contrubution Graph"></a>
+            <div>
+                <sub><sub>Via <a href="https://ghchart.rshah.org" target="_blank">https://ghchart.rshah.org</a></sub></sub>
+            </div>
+        </div>
+        <div id="card-3" class="card">
+            <h1>Twitch</h1>
+            <p>I stream sometimes, mostly coding.</p>
+            <div id="twitch-embed"></div>
+        </div>
+        <div id="nav-buttons">
+            <button id="prev-button">
+                <img class="icon prev" alt="prev">
+            </button>
+            <button id="next-button">
+                <img class="icon next" alt="next">
+            </button>
+        </div>
+    </div>
 </main>
 {% endblock %}
