@@ -7,19 +7,28 @@
 {% block bodycontent %}
 <main>
     <div id="foreground-container">
-        <div id="card-1">
-            <img id="profile-image" alt="me" title="Literally me">
+        <div id="card-1" class="card">
+            <div id="profile-image">
+                <img alt="me" title="Literally me">
+            </div>
             <div class="vl"></div>
-            <div>
+            <div id="card-1-content">
                 <h1>Hi <img class="emote hi"></h1>
-                I'm SZB
-                
+                <span>I'm SZB</span>
+                <ul class="links">
+                    Check out my stuff:
+                    <li><a href="https://github.com/SZB3748"><img class="icon github" aria-label="github icon"><span>Github</span></a></li>
+                    <li><a href="https://twitch.tv/s_z_b_"><img class="icon twitch" aria-label="twitch icon"><span>Twitch</span></a></li>
+                </ul>
             </div>
-            <div id="nav-buttons">
-                <button id="next-button">
-                    <img class="icon next" alt="next">
-                </button>
-            </div>
+        </div>
+        <div id="nav-buttons">
+            <button id="prev-button">
+                <img class="icon prev" alt="prev">
+            </button>
+            <button id="next-button">
+                <img class="icon next" alt="next">
+            </button>
         </div>
     </div>
 </main>

@@ -18,3 +18,16 @@ body, button {
 img.icon.next {
     content: url(/static/img/next.svg);
 }
+
+img.icon.prev {
+    content: url(/static/img/next.svg);
+    transform: scaleX(-1);
+}
+
+img.icon.twitch {
+    content: url(/static/img/twitch.svg)
+}
+
+img.icon.github {
+    content: url(/static/img/github.svg);
+}
