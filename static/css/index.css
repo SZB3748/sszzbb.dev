@@ -143,6 +143,13 @@ body {
     height: var(--size);
 }
 
+#twitch-embed {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    aspect-ratio: 16/9;
+}
+
 @media screen and (width < 550px) {
     .vl {
         height: unset;

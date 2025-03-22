@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="/static/css/index.css">
 {% endblock %}
 {% block scripts %}
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script src="/static/js/index.js"></script>
 {% endblock %}
 {% block bodycontent %}
@@ -44,6 +45,11 @@
             <div>
                 <sub><sub>Via <a href="https://ghchart.rshah.org" target="_blank">https://ghchart.rshah.org</a></sub></sub>
             </div>
+        </div>
+        <div id="card-3" class="card">
+            <h1>Twitch</h1>
+            <p>I stream sometimes, mostly coding.</p>
+            <div id="twitch-embed"></div>
         </div>
         <div id="nav-buttons">
             <button id="prev-button">

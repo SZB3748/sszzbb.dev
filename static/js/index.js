@@ -1,5 +1,5 @@
 const FIRST_CARD = "1";
-const LAST_CARD = "2";
+const LAST_CARD = "3";
 
 
 /**
@@ -44,5 +44,14 @@ window.addEventListener("load", () => {
     document.getElementById("next-button").addEventListener("click", () => {
         const id = location.hash.slice(1);
         location.hash = Number(id.length > 0 ? id : FIRST_CARD) + 1;
+    });
+
+
+    new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "100%",
+        channel: "s_z_b_",
+        parent: ["sszzbb.dev"],
+        layout: "video"
     });
 });
