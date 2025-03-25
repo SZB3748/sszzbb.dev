@@ -100,6 +100,7 @@ body {
 
 #card-2 .groups > .group {
     max-width: 300px;
+    min-width: 200px;
     padding-right: 1.5rem;
 }
 
