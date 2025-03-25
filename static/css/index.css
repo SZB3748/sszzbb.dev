@@ -107,6 +107,11 @@ body {
     text-decoration: none;
 }
 
+#contribution-container {
+    width: 100%;
+    overflow: scroll;
+}
+
 #profile-image {
     display: flex;
     flex-direction: column;
