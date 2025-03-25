@@ -100,11 +100,17 @@ body {
 
 #card-2 .groups > .group {
     max-width: 300px;
+    min-width: 200px;
     padding-right: 1.5rem;
 }
 
 #card-2 .groups > .group h3 a {
     text-decoration: none;
+}
+
+#contribution-container {
+    width: 100%;
+    overflow: scroll;
 }
 
 #profile-image {
