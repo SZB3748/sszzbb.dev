@@ -39,6 +39,7 @@ body {
     max-width: 800px;
     height: 60vh;
     padding: 1.25rem;
+    overflow-y: auto;
 }
 
 #foreground-container > .card:not(.focus) {
@@ -96,6 +97,7 @@ body {
     flex-direction: row;
     overflow-x: auto;
     width: 100%;
+    max-height: 24vh;
 }
 
 #card-2 .groups > .group {
