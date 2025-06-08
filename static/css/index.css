@@ -155,7 +155,7 @@ body {
     height: var(--size);
 }
 
-#twitch-embed {
+#twitch-embed, #vods-embed {
     margin-left: 50%;
     transform: translateX(-50%);
     width: 80%;

@@ -1,5 +1,5 @@
 const FIRST_CARD = "1";
-const LAST_CARD = "3";
+const LAST_CARD = "4";
 
 
 /**
