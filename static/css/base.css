@@ -31,3 +31,7 @@ img.icon.twitch {
 img.icon.github {
     content: url(/static/img/github.svg);
 }
+
+img.icon.youtube {
+    content: url(/static/img/youtube.svg)
+}
