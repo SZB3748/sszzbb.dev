@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}SZB{% endblock %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/static/css/emotes.css">
+<link rel="stylesheet" type="text/css" href="/static/css/art.css">
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/art.js"></script>
+{% endblock %}
+{% block bodycontent %}
+<main>
+    <div id="foreground-container">
+        <h1>Art & Credits</h1>
+        <div class="entries-wrapper">
+            <div id="credit-entries">
+                {% for entry in credits %}
+                <div class="credit-entry">
+                    <div class="credit-author">
+                        <h3 class="name">{{ entry["name"] }}</h3>
+                        <p class="bio">{{ entry["bio"] | safe }}</p>
+                        <div class="links">
+                            {% for platform in ["twitch", "twitter", "youtube", "vgen"] %}{% if platform in entry["links"] %}<a href="{{ entry['links'][platform] }}" target="_blank"><img class="icon {{platform}}"></a>{% endif %}{% endfor %}
+                        </div>
+                    </div>
+                    <div class="credit-works">
+                        {% for media in entry["media"] %}<img title="{{media['name']}}" alt="{{media['alt']}}" src="/static/art/{{media['filename']}}">{% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <button id="back-button"><img class="icon prev"></button>
+    </div>
+</main>
+{% endblock %}

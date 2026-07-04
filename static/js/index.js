@@ -1,5 +1,5 @@
 const FIRST_CARD = "1";
-const LAST_CARD = "4";
+const LAST_CARD = "5";
 
 
 /**
@@ -17,6 +17,23 @@ function changeCard(id) {
 }
 
 window.addEventListener("load", () => {
+
+    const discordButton = document.getElementById("discord-button");
+    const discordLink = "https://discord.gg/mVVv98VNaN";
+    discordButton.addEventListener("click", () => {
+        const a = document.createElement("a");
+        a.href = discordLink;
+        a.target = "_blank";
+        a.click();
+    });
+    if (navigator.clipboard) {
+        discordButton.addEventListener("contextmenu", e => {
+            e.preventDefault();
+            navigator.clipboard.writeText(discordLink).then(() => {
+                newToast("Link Copied", 5, document.body);
+            });
+        });
+    }
 
     window.addEventListener("hashchange", () => {
         const id = location.hash.slice(1);
