@@ -23,7 +23,7 @@ def art_credits():
 def index():
     return render_template("index.html")
 
-@app.get("/art")
+@app.get("/art.html")
 def art():
     with open("credits.json", encoding="utf-8") as f:
         return render_template("art.html", credits=json.load(f))
