@@ -114,6 +114,16 @@
                 "name": "Motivational Poster",
                 "filename": "selfcest_manifest.png",
                 "alt": "Selfcest Poster"
+            },
+            {
+                "name": "Hatszb Miku",
+                "filename": "miku_szb.png",
+                "alt": "Miku SZB"
+            },
+            {
+                "name": "SZBatman",
+                "filename": "batman_szb.png",
+                "alt": "Batman SZB"
             }
         ]
     },
@@ -156,7 +166,7 @@
     },
     {
         "name": "Jewel the Kitty Cat",
-        "bio": "Jewel has been \"infecting\" other streamers with twerk emotes, and made one for me too!",
+        "bio": "Jewel has been \"infecting\" other streamers with art, and made some for me too!",
         "links": {
 
         },
