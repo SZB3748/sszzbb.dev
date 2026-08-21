@@ -134,6 +134,10 @@ body {
     text-decoration: none;
 }
 
+#card-5 > a {
+    margin-right: 1rem;
+}
+
 #contribution-container {
     width: 100%;
     overflow: scroll;
